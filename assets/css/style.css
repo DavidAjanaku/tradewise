@@ -819,7 +819,7 @@ a{
 
 .text_ii{
   position: absolute;
-  top: 15%;
+  top: 18%;
   /* background: red; */
   left: 20px;
   width: 80%;
@@ -975,7 +975,7 @@ a{
 }
 
 .text_iv {
-  top: 237px;
+  /* top: 237px; */
 }
 
 .total-market--contents-3{
@@ -1036,7 +1036,7 @@ i{
 }
 
 
-@media (max-width: 820px) {
+@media (min-width: 820px) {
   nav .nav-bar .sidebarOpen {
     display: block;
 
@@ -1046,7 +1046,7 @@ i{
 
   .text_ii {
 
-    /* top: 100px; */
+    top: 100px;
     width: 70%;
   }
 
@@ -1067,7 +1067,7 @@ i{
 }
 
 
-@media (max-width: 847px) {
+@media (min-width: 847px) {
   nav .nav-bar .sidebarOpen {
     display: block;
   }
@@ -1078,7 +1078,7 @@ i{
   }
   
   .text_ii span p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .text_iii{
@@ -1092,3 +1092,30 @@ i{
 
 
 }
+
+
+
+
+
+
+
+@media (min-width: 1064px){
+  .text_iii {
+      /* width: 70%; */
+      top: 43%;
+  }
+  
+  }
+
+  @media (max-width: 500px) {
+
+    .text_ii span p {
+      font-size: 1.5rem;
+  }
+
+  .text_iii {
+    top: 45%;
+    width: 90%;
+}
+  
+  }
