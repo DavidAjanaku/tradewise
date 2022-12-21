@@ -819,7 +819,7 @@ a{
 
 .text_ii{
   position: absolute;
-  top: 20%;
+  top: 15%;
   /* background: red; */
   left: 20px;
   width: 80%;
@@ -964,7 +964,7 @@ a{
 }
 .text_ii {
 
-  top: 52px;
+  /* top: 52px; */
   width: 78%;
 }
 
@@ -1086,7 +1086,7 @@ i{
   }
 
   .text_iv{
-    top: 80%;
+    top: 82%;
   }
 
 
