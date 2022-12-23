@@ -1226,83 +1226,150 @@ i{
 
 
   /* profile  */
+
+  .profile_title{
+    color: white;
+    margin: 10px;
+  }
+
+  .profile_upload{
+    width: 80%;
+    background: rgb(40, 40, 42);
+    padding: 10px;
+    border-radius: 10px;
+  }
   
 
-  body {
-  background: whitesmoke;
-  font-family: 'Open Sans', sans-serif;
+  .avatar-upload {
+    position: relative;
+    /* max-width: 205px; */
+    margin: 50px auto;
+  }
+
+  .avatar-upload .avatar-edit {
+    position: absolute;
+    left: 249px;
+    z-index: 1;
+    top: 45px;
 }
-.container {
-  max-width: 960px;
-  margin: 30px auto;
-  padding: 20px;
-}
-h1 {
-  font-size: 20px;
-  text-align: center;
-  margin: 20px 0 20px;
-}
-h1 small {
-  display: block;
-  font-size: 15px;
-  padding-top: 8px;
-  color: gray;
-}
-.avatar-upload {
-  position: relative;
-  max-width: 205px;
-  margin: 50px auto;
-}
-.avatar-upload .avatar-edit {
-  position: absolute;
-  right: 12px;
-  z-index: 1;
-  top: 10px;
-}
-.avatar-upload .avatar-edit input {
-  display: none;
-}
+
+  .avatar-upload .avatar-edit input {
+    display: none;
+  }
+  .avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 100%;
+    /* height: 34px; */
+    padding: 10px 20px;
+    margin-bottom: 0;
+    /* border-radius: 100%; */
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+  }
+  .avatar-upload .avatar-edit input + label:hover {
+    background: rgba(29, 33, 233, 255);
+    border-color: #d6d6d6;
+    color: white;
+  }
+  
+  .avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .avatar-upload .avatar-preview > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+
+  .form_group_list input{
+    display: block;
+    height: 35px;
+    background: none;
+    border: .1rem solid white;
+    outline: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+ .form_group_list label{
+    color: white;
+    margin: 25px 0;
+  }
+
+  .email{
+    width: 100%;
+  }
+
+
+  .form_group_list{
+    margin: 20px 0 ;
+  }
+
+  .form_group-1{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form_group-2 .form_group_list{
+    width: 50%;
+  }
+
+
+  .form_group-2 .form_group_list input{
+    width: 100%;
+  }
+
+  .updateBtn{
+    padding: 10px 20px;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .avatar-upload .avatar-edit {
+      position: absolute;
+      left: 172px;
+      z-index: 1;
+      top: 45px;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+
+
 .avatar-upload .avatar-edit input + label {
-  display: inline-block;
-  width: 34px;
-  height: 34px;
-  margin-bottom: 0;
-  border-radius: 100%;
-  background: #FFFFFF;
-  border: 1px solid transparent;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  font-weight: normal;
-  transition: all 0.2s ease-in-out;
+    width: 0;
+    border-radius: 50%;
+    height: 17px;
+    padding: 7px 17px;
+
 }
-.avatar-upload .avatar-edit input + label:hover {
-  background: #f1f1f1;
-  border-color: #d6d6d6;
-}
-.avatar-upload .avatar-edit input + label:after {
-  content: "\f040";
-  font-family: 'FontAwesome';
-  color: #757575;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  margin: auto;
-}
-.avatar-upload .avatar-preview {
-  width: 192px;
-  height: 192px;
-  position: relative;
-  border-radius: 100%;
-  border: 6px solid #F8F8F8;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.avatar-upload .avatar-preview > div {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  }  

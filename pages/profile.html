@@ -204,28 +204,63 @@
                                 <span><h1>
                                     Profile
                                 </h1></span>
-                                <div class="profile_upload">
-                                    <div class="container">
-                                        <h1>jQuery Image Upload 
-                                            <small>with preview</small>
-                                        </h1>
-                                        <div class="avatar-upload">
-                                            <div class="avatar-edit">
-                                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                                <label for="imageUpload"></label>
-                                            </div>
-                                            <div class="avatar-preview">
-                                                <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
-                            <div class="profile_upload"></div>
+                            <div class="profile_upload">
+                                
+<div class="avatar-upload">
+    <div class="avatar-edit">
+        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" onchange="previewFile()"/>
+        <label for="imageUpload"><span class="desktop">Upload</span> <span class="mobile"><i class="fa-solid fa-plus"></i></span></label>
+
+    </div>
+    <div class="avatar-preview">
+        <img id="imagePreview" src="/assets/images/cross.jpg">
+
+    </div>
+</div>
+                            </div>
                         </div>
                         <div class="profile_main">
-                            2
+                            <div class="form_div">
+                                <form action="">
+                                  <div class="form_group-1">
+                                    <div class="form_group_list">
+                                      <label for="">First name
+                                        <input type="text">
+                                      </label>
+                                    </div>
+                                    <div class="form_group_list">
+                                      <label for="">Last name
+                                        <input type="text">
+                                      </label>
+                                    </div>
+
+                                    <div class="form_group_list email">
+                                      <label for="">Email
+                                        <input type="email " class="email">
+                                      </label>
+                                    </div>
+                                  </div>
+                               
+                                  <div class="form_group-2">
+                                    <div class="form_group_list">
+                                      <label for="">Password
+                                        <input type="password">
+                                      </label>
+                                    </div>
+
+                                    <div class="form_group_list">
+                                      <label for=""> Confirm Password
+                                        <input type="password">
+                                      </label>
+                                    </div>
+                                  </div>
+                                   
+                                </form>
+
+                                <button class="updateBtn">Update</button>
+                            </div>
                         </div>
                         <div class="profile_footer">
                             3
@@ -468,25 +503,37 @@
      const div3 = document.querySelector('.div3');
      
     </script>
-<script>
+    <script>
+        // function readURL(input) {
+//     if (input.files && input.files[0]) {
+//         var reader = new FileReader();
+//         reader.onload = function(e) {
+//             $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+//             $('#imagePreview').hide();
+//             $('#imagePreview').fadeIn(650);
+//         }
+//         reader.readAsDataURL(input.files[0]);
+//     }
+// }
+// $("#imageUpload").change(function() {
+//     readURL(this);
+// });
 
+function previewFile() {
+  var preview = document.querySelector('img');
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
 
-    function readURL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            document.querySelector('.imagePreview').style.backgroundImage = "url('+e.target.result)";  
-            // .css('background-image', 'url('+e.target.result +')');
-            $('#imagePreview').hide();
-            $('#imagePreview').fadeIn(650);
-        }
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-$("#imageUpload").change(function() {
-    readURL(this);
-});
-</script>
+  reader.addEventListener("load", function () {
+    preview.src = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+ }
+    </script>
+
     <script src="../assets/script/hamburger.js"></script>
   </body>
 </html>
