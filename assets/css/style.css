@@ -1679,7 +1679,7 @@ i{
     background-color: white;
     position: relative;
     text-align: ;
-    padding:
+    padding:20px;
 }
 
 .modal-box .close {
@@ -1743,7 +1743,7 @@ input[type=checkbox]{
     background-color: #d8d8d8;
     /* width: 100%; */
     padding: 30px 2.5%;
-    
+    display: none;
 }
 .modal-box .cancel{
     background-color: #c44f4f;
@@ -1783,6 +1783,7 @@ h1, .login {
     text-align: center;
     display: block;
     margin-top: 20px;
+    font-size: 20px;
     
 }
 
@@ -1790,7 +1791,7 @@ h1, .login {
 .modal-box .login-button{
   width: 50%;
   padding: 15px 5px;
-  background: #1483be;
+  background: rgba(29, 33, 233, 255);
   color: #fff;
   outline: none;
   border: none;
@@ -1798,6 +1799,10 @@ h1, .login {
 
 
 
+.login-flex{
+  display: flex;
+  justify-content: space-around;
+}
 
 
 
