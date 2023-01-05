@@ -1523,7 +1523,7 @@ i{
   }
 
   .accordion {
-    width: 60%;
+    /* width: 60%; */
   }
 }
 
@@ -1653,3 +1653,156 @@ i{
   justify-content: center;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+.modal-cont {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.47);
+    top: 0;
+    left: 0;
+     overflow: auto;
+   z-index: 999;
+    
+}
+
+.modal-box{
+    width: 60%;
+    margin: 30px auto;
+    background-color: white;
+    position: relative;
+    text-align: ;
+    padding:
+}
+
+.modal-box .close {
+    position: absolute;
+    right: 16px;
+    top: 5px;
+    font-size: 25px;
+    font-weight: bolder;  
+    cursor: pointer
+}
+.modal-box .close:hover, .modal-box .close:focus{
+    color: #c6c6c6
+}
+.modal-box img{
+    width: 30%;
+    border-radius: 50%;
+    display: block;
+    margin:auto;
+    padding: 14px;
+    margin-bottom: 30px;
+    min-width: 150px;
+    max-width: 230px
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    display: block;
+    padding: 8px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    
+}
+
+input[type = checkbox] {
+    margin-right: 2px;
+    vertical-align: baseline; /*no effect for baseline*/
+}
+
+
+.close-forgot{
+    background-color: 
+}
+
+.modal-box label, .modal-box .login-button, .modal-box input{
+    width: 95%;
+    display: block;
+    margin: 10px auto
+    
+}
+
+.modal-box .login-button{
+    margin-top: 16px;
+    cursor: pointer
+}
+input[type=checkbox]{
+    display: inline-block;
+    width: auto;
+    margin-left: 16px
+}
+.modal-box .close-forgot {
+    background-color: #d8d8d8;
+    /* width: 100%; */
+    padding: 30px 2.5%;
+    
+}
+.modal-box .cancel{
+    background-color: #c44f4f;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer
+}
+.modal-box span{
+    float: right
+}
+.modal-box a{
+    color: #1483be;
+    font-weight: 500;
+    text-decoration: underline
+}
+
+
+.modal-cont{display: none}
+.modal-box {
+    animation-name: zoom;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8)
+    
+}
+@keyframes zoom {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+h1, .login {
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    
+}
+
+
+.modal-box .login-button{
+  width: 50%;
+  padding: 15px 5px;
+  background: #1483be;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
