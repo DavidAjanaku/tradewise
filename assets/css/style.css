@@ -1115,7 +1115,7 @@ i{
   @media (min-width: 500px) {
 
     .text_ii span p {
-      font-size: 1.5rem;
+      font-size: 2rem;
   }
 
   .text_iii {
@@ -1791,7 +1791,7 @@ h1, .login {
 .modal-box .login-button{
   width: 50%;
   padding: 15px 5px;
-  background: rgba(29, 33, 233, 255);
+  background: ;
   color: #fff;
   outline: none;
   border: none;
