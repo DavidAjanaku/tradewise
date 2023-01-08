@@ -180,7 +180,7 @@
                 </div>
                 <div class="guest_mode--content-2">
                   <div class="guest_mode--content--sign-in">
-                    <a href="#">Sign in</a>
+                    <a href="#" class="login">Sign in</a>
                   </div>
                 </div>
               </div>
@@ -476,7 +476,7 @@
           </div>
           <div class="nav__bottom">
             <ul class="nav__items">
-              <li class="nav__item">
+              <!-- <li class="nav__item">
                 <button
                   class="nav__item-box"
                   type="button"
@@ -490,14 +490,42 @@
                   </span>
                   <span class="nav__item-text" data-expand-label>Collapse</span>
                 </button>
-              </li>
+              </li> -->
             </ul>
           </div>
         </nav>
       </div>
     </div>
     </div>
-   
+     <!-- <button id="" class="">Login</button> -->
+    <!-- <h1>Modal Login Form</h1> -->
+    <div class="modal-cont">
+      <div class="modal-box">
+          <span class="close">&times;</span>
+          <form action="" class="login-box">
+            <h1> Login Page </h1>
+              <label for="">Username</label>
+              <input type="text" class="name" required>
+              <label for="">Password</label>
+              <input type="password" class="password" required>
+            <button class="login-button">Login</button>
+
+            <div class="login-flex">
+              <a href="" >Forgot email/password?</a> <br>
+              <p>Don't have an account yet?
+              </p>
+              <a href="register.html"   target="_blank">Sign Up</a>
+            </div>
+           
+              <div class="close-forgot">
+                  <button class="cancel">Cancel</button>
+              </div>
+          </form>
+      </div>
+  </div>
+
+
+  <script src="../assets/script/loginModal.js"></script>
 
      <script>
      const div3 = document.querySelector('.div3');

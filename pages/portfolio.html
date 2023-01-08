@@ -128,6 +128,23 @@
                       </a>
                     </li>
                   </ul>
+
+                  <ul class="nav__items">
+                    <li class="nav__item depositModal">
+                      <button
+                        class="nav__item-box"
+                        type="button"
+                        aria-expanded="true"
+                        data-expand
+                      >
+                        <span class="nav__item-icon">
+                         
+                          </svg>
+                        </span>
+                        <span class="nav__item-text" data-expand-label>Deposit</span>
+                      </button>
+                    </li>
+                  </ul>
                 </div>
                 <!-- <div class='container'>
                    <i class="fa-solid fa-magnifying-glass searchContain"></i>
@@ -180,7 +197,7 @@
                 </div>
                 <div class="guest_mode--content-2">
                   <div class="guest_mode--content--sign-in">
-                    <a href="#">Sign in</a>
+                    <a href="#" class="login">Sign in</a>
                   </div>
                 </div>
               </div>
@@ -624,10 +641,29 @@
                 </a>
               </li>
             </ul>
+
+            <!-- <ul class="nav__items  ">
+              <li class="nav__item depositModal ">
+                <a
+                  class="nav__item-box nav__item-box--red  "
+                  href=""
+                  title="Deposit"
+                >
+                  <span class="nav__item-icon nav__item-icon--badge">
+                    <svg width="24px" height="24px" aria-hidden="true">
+                      <use xlink:href="#segments" />
+                    </svg>
+                  </span>
+                  <span class="nav__item-text  "
+                    >Deposit <strong class="nav__item-badge">24</strong></span
+                  >
+                </a>
+              </li>
+            </ul> -->
           </div>
           <div class="nav__bottom">
             <ul class="nav__items">
-              <li class="nav__item">
+              <li class="nav__item depositModal2">
                 <button
                   class="nav__item-box"
                   type="button"
@@ -635,11 +671,10 @@
                   data-expand
                 >
                   <span class="nav__item-icon">
-                    <svg width="24px" height="24px" aria-hidden="true">
-                      <use xlink:href="#arrow" />
+                   
                     </svg>
                   </span>
-                  <span class="nav__item-text" data-expand-label>Collapse</span>
+                  <span class="nav__item-text" data-expand-label>Deposit</span>
                 </button>
               </li>
             </ul>
@@ -650,11 +685,23 @@
     </div>
    
 
+    
+<div id="mySizeChartModal" class="ebcf_modal">
+
+  <div class="ebcf_modal-content">
+    <span class="ebcf_close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+
      <script>
      const div3 = document.querySelector('.div3');
      
     </script>
 
     <script src="../assets/script/hamburger.js"></script>
+    <script src="/assets/script/deposit.js"></script>
   </body>
 </html>

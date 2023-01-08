@@ -52,7 +52,7 @@
                         <span class="nav__item-text">Home</span>
                       </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item ">
                       <a class="nav__item-box" href="portfolio.html" title="Portfolio">
                         <span class="nav__item-icon">
                          <i class="fa-solid fa-file"></i>
@@ -75,8 +75,8 @@
                         <span class="nav__item-text">Discover</span>
                       </a>
                     </li>
-                    <li class="nav__item active ">
-                      <a class="nav__item-box" href="pages/account_summary.html" title="Account Summary">
+                    <li class="nav__item  active">
+                      <a class="nav__item-box" href="account_summary.html" title="Account Summary">
                         <span class="nav__item-icon nav__item-icon--badge">
                          <i class="fa-regular fa-clock"></i>
                             <use xlink:href="#hotspots" />
@@ -126,6 +126,23 @@
                           >Referral <strong class="nav__item-badge">24</strong></span
                         >
                       </a>
+                    </li>
+                  </ul>
+
+                  <ul class="nav__items">
+                    <li class="nav__item depositModal">
+                      <button
+                        class="nav__item-box"
+                        type="button"
+                        aria-expanded="true"
+                        data-expand
+                      >
+                        <span class="nav__item-icon">
+                         
+                          </svg>
+                        </span>
+                        <span class="nav__item-text" data-expand-label>Deposit</span>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -180,7 +197,7 @@
                 </div>
                 <div class="guest_mode--content-2">
                   <div class="guest_mode--content--sign-in">
-                    <a href="#">Sign in</a>
+                    <a href="#" class="login">Sign in</a>
                   </div>
                 </div>
               </div>
@@ -548,7 +565,7 @@
                   <span class="nav__item-text">Home</span>
                 </a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item ">
                 <a class="nav__item-box" href="portfolio.html" title="Portfolio">
                   <span class="nav__item-icon">
                    <i class="fa-solid fa-file"></i>
@@ -561,7 +578,7 @@
             </ul>
            
             <ul class="nav__items">
-              <li class="nav__item">
+              <li class="nav__item ">
                 <a class="nav__item-box" href="discover.html" title="Discover">
                   <span class="nav__item-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -571,7 +588,7 @@
                   <span class="nav__item-text">Discover</span>
                 </a>
               </li>
-              <li class="nav__item  active">
+              <li class="nav__item active">
                 <a class="nav__item-box" href="account_summary.html" title="Account Summary">
                   <span class="nav__item-icon nav__item-icon--badge">
                    <i class="fa-regular fa-clock"></i>
@@ -624,10 +641,29 @@
                 </a>
               </li>
             </ul>
+
+            <!-- <ul class="nav__items  ">
+              <li class="nav__item depositModal ">
+                <a
+                  class="nav__item-box nav__item-box--red  "
+                  href=""
+                  title="Deposit"
+                >
+                  <span class="nav__item-icon nav__item-icon--badge">
+                    <svg width="24px" height="24px" aria-hidden="true">
+                      <use xlink:href="#segments" />
+                    </svg>
+                  </span>
+                  <span class="nav__item-text  "
+                    >Deposit <strong class="nav__item-badge">24</strong></span
+                  >
+                </a>
+              </li>
+            </ul> -->
           </div>
           <div class="nav__bottom">
             <ul class="nav__items">
-              <li class="nav__item">
+              <li class="nav__item depositModal2">
                 <button
                   class="nav__item-box"
                   type="button"
@@ -635,11 +671,10 @@
                   data-expand
                 >
                   <span class="nav__item-icon">
-                    <svg width="24px" height="24px" aria-hidden="true">
-                      <use xlink:href="#arrow" />
+                   
                     </svg>
                   </span>
-                  <span class="nav__item-text" data-expand-label>Collapse</span>
+                  <span class="nav__item-text" data-expand-label>Deposit</span>
                 </button>
               </li>
             </ul>
@@ -649,6 +684,45 @@
     </div>
     </div>
    
+
+      <!-- <button id="" class="">Login</button> -->
+    <!-- <h1>Modal Login Form</h1> -->
+    <div class="modal-cont">
+      <div class="modal-box">
+          <span class="close">&times;</span>
+          <form action="" class="login-box">
+            <h1> Login Page </h1>
+              <label for="">Username</label>
+              <input type="text" class="name" required>
+              <label for="">Password</label>
+              <input type="password" class="password" required>
+            <button class="login-button">Login</button>
+
+            <div class="login-flex">
+              <a href="" >Forgot email/password?</a> <br>
+              <p>Don't have an account yet?
+              </p>
+              <a href="register.html"   target="_blank">Sign Up</a>
+            </div>
+           
+              <div class="close-forgot">
+                  <button class="cancel">Cancel</button>
+              </div>
+          </form>
+      </div>
+  </div>
+  <div id="mySizeChartModal" class="ebcf_modal">
+
+    <div class="ebcf_modal-content">
+      <span class="ebcf_close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+  
+  </div>
+
+
+  <script src="../assets/script/deposit.js"></script>
+  <script src="../assets/script/loginModal.js"></script>
 
      <script>
      const div3 = document.querySelector('.div3');
