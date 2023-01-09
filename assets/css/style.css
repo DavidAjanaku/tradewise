@@ -402,8 +402,8 @@ nav .nav-bar .logo a {
   color: hsl(0, 0%, 100%);
   display: flex;
   margin-bottom: 2.5em;
-  width: 3em;
-  height: 3em;
+  /* width: 3em;
+  height: 3em; */
   transform: translateX(0.75em);
   transition: background-color var(--trans-dur), color var(--trans-dur),
     transform var(--trans-dur) ease-in-out;
