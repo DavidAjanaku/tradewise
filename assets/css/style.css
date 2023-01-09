@@ -1859,11 +1859,11 @@ h1, .login {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 70%;
+    width: 80%;
     top: 10%;
     position: absolute;
     z-index: 99;
-    left: 10%;
+    left: 5%;
     height: 70%;
 }
 
@@ -1920,7 +1920,7 @@ body .container {
   border-radius: 3px;
   overflow: hidden;
   height: 69%;
-  width: 70%;
+  width: 90%;
 }
 body .container input {
   display: none;

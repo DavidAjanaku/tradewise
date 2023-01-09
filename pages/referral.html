@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TradeWise</title>
+    <title>CrestMaverickBroker</title>
+    <link rel="stylesheet" href="assets/css/other.css">
+
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -13,7 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="shortcut icon" href="../assets/images/Crest-03.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   </head>
@@ -25,11 +27,11 @@
         <nav>
           <div class="nav-bar">
             <i class="fa-solid fa-bars sidebarOpen"></i>
-            <span class="logo navLogo  ss"><a href="#">Tradewise</a></span>
+            <span class="logo navLogo  ss"><a href="#">CrestMaverickBroker</a></span>
 
             <div class="menu">
               <div class="logo-toggle">
-                <span class="logo"><a href="#">Tradewise</a></span>
+                <span class="logo"><a href="#">CrestMaverickBroker</a></span>
                 <i class="fa-solid fa-xmark sidebarClose"></i>
               </div>
 
@@ -191,7 +193,7 @@
                   </span>
                   <span class="guest_mode--paragraph">
                     <p>
-                      The data presented are examples to let you experience Passfolio before signing up
+                      The data presented are examples to let you experience CrestMaverickBroker before signing up
                     </p>
                   </span>
                 </div>
@@ -536,7 +538,74 @@
 
     <div class="ebcf_modal-content">
       <span class="ebcf_close">&times;</span>
-      <p>Some text in the Modal..</p>
+      <div class="container">
+        <input type="radio" id="tab1" name="tab" checked>
+        <label for="tab1"><i class="fa fa-code"></i> Deposit</label>
+        <input type="radio" id="tab2" name="tab">
+        <label for="tab2"><i class="fa fa-history"></i> Withdraw</label>
+       
+       
+        <div class="line"></div>
+        <div class="content-container">
+          <div class="content" id="c1">
+            <div class="c1_container">
+              <div class="c1--wrapper">
+                <span class="user_name">Daviee</span>
+                <div class="c1--balance">
+                  <div class="c1_span">
+                    Your balance
+                  </div>
+                  <div class="c1_span-2">
+                    $15
+                  </div>
+                </div>
+
+                <div class="c1--header">
+                  <h4>Deposit</h4>
+                </div>
+                <div class="deposit--tab">
+                  <span>Amount</span>
+                  <input type="text" class="input_value" placeholder="Enter value">
+                </div>
+               <button class="sign-btn">Deposit</button>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="c2">
+            <div class="c1_container">
+              <div class="c1--wrapper">
+                <span class="user_name">Daviee</span>
+                <div class="c1--balance">
+                  <div class="c1_span">
+                    Your balance
+                  </div>
+                  <div class="c1_span-2">
+                    $15
+                  </div>
+                </div>
+
+                <div class="c1--header">
+                  <h4>Deposit</h4>
+                </div>
+                <div class="deposit--tab">
+                  <span>Amount</span>
+                  <input type="text" class="input_value" placeholder="Enter value">
+                </div>
+               <button class="sign-btn">Send a request</button>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="c3">
+            <h3>Reviews</h3>
+            <p>Amazing product. I don't know how it works.</p>
+            <i>- Anonymous</i>
+          </div>
+          <div class="content" id="c4">
+            <h3>Share</h3>
+            <p>This product is currently not shareable.</p>
+          </div>
+        </div>
+      </div>
     </div>
   
   </div>
