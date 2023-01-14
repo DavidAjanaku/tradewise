@@ -4235,7 +4235,9 @@ html {
   }
   .header-e1-container {
     margin-bottom: 0;
-    background-image: url(../images/sofi-invest-iphone-app.jpg);
+    background-image: url(../images/home-1.png);
+    background-size: cover;
+    background-position: center;
   }
   .header-e1-container.custom-margin {
     max-width: 1000px;
@@ -43444,9 +43446,9 @@ html {
       padding-left: 16px;
     }
     .header-e1-container.custom-margin.image-on-mobile {
-      background-image: url(../images/sofi-invest-iphone-app.jpg);
-      background-position: 50% 0;
-      background-size: contain;
+      background-image: url(../images/home-1.png);
+      /* background-position: 50% 0; */
+      /* background-size: contain; */
       background-repeat: no-repeat;
     }
     .header-e1-container.custom-margin.image-on-mobile.v2 {
@@ -43455,8 +43457,8 @@ html {
     .header-e1-container.custom-margin.image-on-mobile.no-isa-offer {
       /* background-image: none; */
       background-position: 0 0;
-      background-size: auto;
-      background-repeat: repeat;
+      /* background-size: contain; */
+      background-repeat: no-repeat;
     }
     .image-39 {
       display: block;

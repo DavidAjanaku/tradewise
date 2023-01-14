@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Coin</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="/assets/css/other.css"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="/assets/css/chooseCoin.css">
+</head>
+<body>
+
+    <style>
+        body .container input {
+    display: block;
+}
+
+.center-img{
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+body .container {
+    /* width: 400px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    box-shadow: 0 0 100px RGBa(0, 0, 0, 0.5);
+    border-radius: 3px;
+    overflow: hidden;
+    height: 100%;
+    width: 90%;
+}
+
+
+.shareUrl-input{
+    color: black;
+}
+    </style>
+    <div class="container">
+
+        <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">BTC</li>
+            <li class="tab-link" data-tab="tab-2">ETH</li>
+            <li class="tab-link" data-tab="tab-3">USD</li>
+        </ul>
+    
+        <div id="tab-1" class="tab-content current">
+            <div class="by_trend--2">
+                <div class="by_trend--2_div">
+                    <header class="shareUrl-header">
+                        <p>Send only Bitcoin (BTC) to this address.
+                            Sending any other coins may result in permanent loss.</p>
+                        <!-- <p class="shareUrl-headerSubtext">Invite friends and Earn </p> -->
+                      </header>
+                    <div class="wrapper">
+                        <div class="center-img">
+                            <img src="/assets/images/bitcoin.jpeg" width="200" alt="">
+
+                        </div>
+
+                        <div class="content u-flexCenter u-sizeViewHeightMin100">
+                          <div class="shareUrl u-verticalGrid u-marginAuto u-size1040">
+                        
+                            <div class="shareUrl-body">
+                              <div class="container-refer">
+                                <!-- COPY INPUT -->
+                                <input class="shareUrl-input js-shareUrl" type="text" readonly="readonly" />
+                                <p class="shareUrl-subtext">Click above to copy the link.</p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    
+    </div>
+        <div id="tab-2" class="tab-content">
+            <div class="by_trend--2">
+                <div class="by_trend--2_div">
+                    <header class="shareUrl-header">
+                        <!-- <h1 class="shareUrl-headerText">Click to Copy Invite Link</h1> -->
+                        <p>
+                            Send only Ethereum (ETH) to this address.
+Sending any other coins may result in permanent loss.
+                        </p>
+                        <!-- <p class="shareUrl-headerSubtext">Invite friends and Earn </p> -->
+                      </header>
+                    <div class="wrapper">
+                        <div class="center-img">
+                            <img src="/assets/images/ethereum.jpeg" width="200" alt="">
+
+                        </div>
+
+                        <div class="content u-flexCenter u-sizeViewHeightMin100">
+                          <div class="shareUrl u-verticalGrid u-marginAuto u-size1040">
+                        
+                            <div class="shareUrl-body">
+                              <div class="container-refer">
+                                <!-- COPY INPUT -->
+                                <input class="shareUrl-input js-shareUrl  js-shareUrl1" type="text" readonly="readonly" />
+                                <p class="shareUrl-subtext">Click above to copy the link.</p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div id="tab-3" class="tab-content">
+            <div class="by_trend--2">
+                <div class="by_trend--2_div">
+                    <header class="shareUrl-header">
+                        <!-- <h1 class="shareUrl-headerText">Click to Copy Invite Link</h1> -->
+                        <p>
+                            Send only USD Coin (ERC20) to this address.
+Sending any other coins may result in permanent loss.
+                        </p>
+                        <!-- <p class="shareUrl-headerSubtext">Invite friends and Earn </p> -->
+                      </header>
+                    <div class="wrapper">
+                        <div class="center-img">
+                            <img src="/assets/images/usd.jpeg" width="200" alt="">
+
+                        </div>
+
+                        <div class="content u-flexCenter u-sizeViewHeightMin100">
+                          <div class="shareUrl u-verticalGrid u-marginAuto u-size1040">
+                        
+                            <div class="shareUrl-body">
+                              <div class="container-refer">
+                                <!-- COPY INPUT -->
+                                <input class="shareUrl-input js-shareUrl  js-shareUrl2  " type="text" readonly="readonly" />
+                                <p class="shareUrl-subtext">Click above to copy the link.</p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+  <script src="/assets/script/reuseable.js"></script>
+</body>
+</html>
