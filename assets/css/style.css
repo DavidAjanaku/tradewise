@@ -2069,3 +2069,21 @@ body .container .content-container .content p, body .container .content-containe
 .ebcf_modal-content .container{
   padding: 0;
 }
+
+
+.fund-your-account{
+  background: rgba(40, 40, 42, 255);
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.fund-your-account ul{
+  display: flex;
+}
+
+.fund-your-account ul li{
+  text-align: start;
+  list-style: none;
+margin: 10px;
+}

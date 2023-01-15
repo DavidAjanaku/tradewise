@@ -8,7 +8,8 @@
   }
   
   .form_wrapper {
-    background: #fff;
+    background: rgba(32, 32, 32, 255);
+    color: white;
     width: 400px;
     max-width: 100%;
     box-sizing: border-box;
